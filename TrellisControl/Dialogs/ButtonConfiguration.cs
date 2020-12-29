@@ -68,5 +68,23 @@ namespace TrellisControl.Dialogs
                     break;
             }
         }
+
+        private void executableBrowseButton_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog executableBrowserDialog = new OpenFileDialog()
+            {
+                CheckPathExists = true,
+                CheckFileExists = true,
+                Filter = "exe files (*.exe)|*.exe",
+                Title = "Choose Executable to run",
+                RestoreDirectory = true
+            };
+
+            if(executableBrowserDialog.ShowDialog() == DialogResult.OK)
+            {
+                executablePath.Text = executableBrowserDialog.FileName;
+                this.ButtonConfigurationMap.executablePath = executableBrowserDialog.FileName;
+            }
+        }
     }
 }

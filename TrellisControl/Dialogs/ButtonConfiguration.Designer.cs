@@ -43,26 +43,29 @@ namespace TrellisControl.Dialogs
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 25);
+            this.label1.Location = new System.Drawing.Point(15, 31);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 20);
+            this.label1.Size = new System.Drawing.Size(117, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Button Color:";
             // 
             // trellisButtonColor
             // 
-            this.trellisButtonColor.Location = new System.Drawing.Point(114, 9);
+            this.trellisButtonColor.Location = new System.Drawing.Point(142, 11);
+            this.trellisButtonColor.Margin = new System.Windows.Forms.Padding(4);
             this.trellisButtonColor.Name = "trellisButtonColor";
-            this.trellisButtonColor.Size = new System.Drawing.Size(50, 50);
+            this.trellisButtonColor.Size = new System.Drawing.Size(62, 62);
             this.trellisButtonColor.TabIndex = 1;
             this.trellisButtonColor.Click += new System.EventHandler(this.trellisButtonColor_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 106);
+            this.label2.Location = new System.Drawing.Point(15, 132);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(103, 20);
+            this.label2.Size = new System.Drawing.Size(125, 25);
             this.label2.TabIndex = 2;
             this.label2.Text = "Button Action:";
             // 
@@ -73,44 +76,50 @@ namespace TrellisControl.Dialogs
             this.trellisButtonAction.Items.AddRange(new object[] {
             "None",
             "Executable"});
-            this.trellisButtonAction.Location = new System.Drawing.Point(121, 103);
+            this.trellisButtonAction.Location = new System.Drawing.Point(151, 129);
+            this.trellisButtonAction.Margin = new System.Windows.Forms.Padding(4);
             this.trellisButtonAction.Name = "trellisButtonAction";
-            this.trellisButtonAction.Size = new System.Drawing.Size(151, 28);
+            this.trellisButtonAction.Size = new System.Drawing.Size(188, 33);
             this.trellisButtonAction.TabIndex = 3;
             this.trellisButtonAction.SelectionChangeCommitted += new System.EventHandler(this.trellisButtonAction_SelectionChangeCommitted);
             // 
             // executablePathLabel
             // 
             this.executablePathLabel.AutoSize = true;
-            this.executablePathLabel.Location = new System.Drawing.Point(13, 192);
+            this.executablePathLabel.Location = new System.Drawing.Point(16, 240);
+            this.executablePathLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.executablePathLabel.Name = "executablePathLabel";
-            this.executablePathLabel.Size = new System.Drawing.Size(116, 20);
+            this.executablePathLabel.Size = new System.Drawing.Size(138, 25);
             this.executablePathLabel.TabIndex = 4;
             this.executablePathLabel.Text = "Executable Path:";
             // 
             // executablePath
             // 
-            this.executablePath.Location = new System.Drawing.Point(135, 189);
+            this.executablePath.Location = new System.Drawing.Point(169, 236);
+            this.executablePath.Margin = new System.Windows.Forms.Padding(4);
             this.executablePath.Name = "executablePath";
             this.executablePath.ReadOnly = true;
-            this.executablePath.Size = new System.Drawing.Size(321, 27);
+            this.executablePath.Size = new System.Drawing.Size(400, 31);
             this.executablePath.TabIndex = 5;
             // 
             // executableBrowseButton
             // 
-            this.executableBrowseButton.Location = new System.Drawing.Point(462, 189);
+            this.executableBrowseButton.Location = new System.Drawing.Point(578, 236);
+            this.executableBrowseButton.Margin = new System.Windows.Forms.Padding(4);
             this.executableBrowseButton.Name = "executableBrowseButton";
-            this.executableBrowseButton.Size = new System.Drawing.Size(94, 29);
+            this.executableBrowseButton.Size = new System.Drawing.Size(118, 36);
             this.executableBrowseButton.TabIndex = 6;
             this.executableBrowseButton.Text = "Browse";
             this.executableBrowseButton.UseVisualStyleBackColor = true;
+            this.executableBrowseButton.Click += new System.EventHandler(this.executableBrowseButton_Click);
             // 
             // acceptButton
             // 
             this.acceptButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.acceptButton.Location = new System.Drawing.Point(485, 230);
+            this.acceptButton.Location = new System.Drawing.Point(606, 288);
+            this.acceptButton.Margin = new System.Windows.Forms.Padding(4);
             this.acceptButton.Name = "acceptButton";
-            this.acceptButton.Size = new System.Drawing.Size(94, 29);
+            this.acceptButton.Size = new System.Drawing.Size(118, 36);
             this.acceptButton.TabIndex = 7;
             this.acceptButton.Text = "OK";
             this.acceptButton.UseVisualStyleBackColor = true;
@@ -118,9 +127,10 @@ namespace TrellisControl.Dialogs
             // cancelButton
             // 
             this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancelButton.Location = new System.Drawing.Point(385, 230);
+            this.cancelButton.Location = new System.Drawing.Point(481, 288);
+            this.cancelButton.Margin = new System.Windows.Forms.Padding(4);
             this.cancelButton.Name = "cancelButton";
-            this.cancelButton.Size = new System.Drawing.Size(94, 29);
+            this.cancelButton.Size = new System.Drawing.Size(118, 36);
             this.cancelButton.TabIndex = 8;
             this.cancelButton.Text = "Cancel";
             this.cancelButton.UseVisualStyleBackColor = true;
@@ -128,10 +138,11 @@ namespace TrellisControl.Dialogs
             // ButtonConfiguration
             // 
             this.AcceptButton = this.acceptButton;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.cancelButton;
-            this.ClientSize = new System.Drawing.Size(591, 271);
+            this.ClientSize = new System.Drawing.Size(739, 339);
+            this.ControlBox = false;
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.acceptButton);
             this.Controls.Add(this.executableBrowseButton);
@@ -142,6 +153,7 @@ namespace TrellisControl.Dialogs
             this.Controls.Add(this.trellisButtonColor);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ButtonConfiguration";
             this.Text = "Button Configuration";
             this.ResumeLayout(false);

@@ -13,5 +13,7 @@ namespace TrellisControl.ApplicationCore
         public static string SetAllKeys => "SETCOLOR,{0},{1},{2}";
 
         public static string SetBrightness => "SETBRIGHTNESS,{0}";
+
+        public static string ButtonTagFormat => "Button{0}";
     }
 }
